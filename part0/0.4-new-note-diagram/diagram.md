@@ -3,7 +3,7 @@
 
 ```mermaid
 sequenceDiagram
-Alice->>John: Hello John, how are you?
+browser->>server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note note=<new note text>
 loop Healthcheck
     John->>John: Fight against hypochondria
 end
