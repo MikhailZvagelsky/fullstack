@@ -1,2 +1,3 @@
-# fullstack
-Repository for the [Deep Dive Into Modern Web Development](https://fullstackopen.com/en/) course.
+# Repository for the Deep Dive Into Modern Web Development course.
+
+Course link https://fullstackopen.com/en/.
