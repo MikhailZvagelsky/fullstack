@@ -5,7 +5,7 @@ Base server URL: https://studies.cs.helsinki.fi
 
 ```mermaid
 sequenceDiagram
-browser->>server: HTTP POST /exampleapp/new_note note=<new note text>
+browser->>server: HTTP POST /exampleapp/new_note <br/> application/x-www-form-urlencoded <br/> note=<new note text>
 Note over server: process new note
 server-->>browser: 302 redirect /exampleapp/notes
 browser->>server: HTTP GET /exampleapp/notes
