@@ -1,19 +1,16 @@
 
-# Note creation flow
+# Single page app diagram
 
 Base server URL: https://studies.cs.helsinki.fi
 
 ```mermaid
 sequenceDiagram
-browser->>server: HTTP POST /exampleapp/new_note note=<new note text>
-Note over server: process new note
-server-->>browser: 302 redirect /exampleapp/notes
-browser->>server: HTTP GET /exampleapp/notes
-server-->>browser: 200 tetx/html <html document>
+browser->>server: HTTP GET /exampleapp/spa
+server-->>browser: 200 text/html <html document>
 Note over browser: start html processing
 browser->>server: HTTP GET /exampleapp/main.css
 server-->>browser: 200 tetx/css <css file>
-browser->>server: HTTP GET /exampleapp/main.js
+browser->>server: HTTP GET /exampleapp/spa.js
 server-->>browser: 200 application/javascript <javascript file>
 Note over browser: start javascript code execution
 browser->>server: HTTP GET /exampleapp/data.json
