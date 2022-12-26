@@ -21,5 +21,5 @@ server-->>browser: 200 application/json <array of notes in json format>
 Note over browser: finish web page rendering
 ```
 
-Also browser sends GET request to /favicon.ico, but site doesn't have an icon,
+Also browser sends GET request to /favicon.ico, but the site doesn't have an icon,
 and server sends back default html document, available by the base URL.
