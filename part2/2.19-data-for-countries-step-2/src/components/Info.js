@@ -22,7 +22,7 @@ export function Info({ searchString, countries, selectedCountry, setSelectedCoun
   }
 
   if (searchResults.length === 1) {
-    setSelectedCountry(searchResults[0]);
+    return (<CountryInfo country={searchResults[0]} />);
   }
 
   if (searchResults.length > 10) {
