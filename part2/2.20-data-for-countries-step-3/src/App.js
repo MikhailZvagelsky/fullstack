@@ -31,9 +31,7 @@ function App() {
   const buildDataModel = () => {
     dataModelService
       .buildDataModel(searchString, countries, selectedCountry, setDataModel);
-    console.log('build');
   };
-
   useEffect(buildDataModel, [countries, searchString, selectedCountry]);
 
   const bodyStyle = {
@@ -42,8 +40,7 @@ function App() {
   return (
     <div style={bodyStyle}>
       <Search searchString={searchString} restartSearch={restartSearch} />
-      {/* <Info searchString={searchString} countries={countries} selectedCountry={selectedCountry} setSelectedCountry={setSelectedCountry} /> */}
-      <Info dataModel={dataModel} />
+      <Info dataModel={dataModel} setSelectedCountry={setSelectedCountry} />
     </div>
   );
 }

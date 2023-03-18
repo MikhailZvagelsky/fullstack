@@ -3,7 +3,6 @@ export function CountryNames({ countries, setSelectedCountry }) {
   const showCountry = (event) => {
     const countryName = event.target.previousSibling.textContent;
     const selectedCountry = countries.find(country => country.name.official === countryName);
-    console.log(selectedCountry);
     setSelectedCountry(selectedCountry);
   };
 

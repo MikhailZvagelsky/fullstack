@@ -5,7 +5,7 @@ const baseUrl = 'https://api.openweathermap.org/data/3.0/onecall';
 
 
 const getWeatherData = (latitude, longitude) => {
-  const url = baseUrl + `?lat=${latitude}&lon=${longitude}&appid=${api_key}`;
+  const url = `${baseUrl}?lat=${latitude}&lon=${longitude}&units=metric&appid=${api_key}`;
   const response = axios.get(url);
   
   return response;

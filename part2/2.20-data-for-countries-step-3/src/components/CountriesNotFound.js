@@ -1,7 +1,7 @@
-export function CountriesNotFound({ searchString }) {
+export function CountriesNotFound() {
   return (
     <div>
-      Countries not found for search string: '{searchString}'.
+      Countries not found for search string.
     </div>
   );
 }
